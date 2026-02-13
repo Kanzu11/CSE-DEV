@@ -15,13 +15,13 @@ const Footer = () => {
                             Transforming your documents into intelligent conversations. Secure, fast, and accurate RAG solutions.
                         </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
+                            <a href="x.com" className="text-gray-400 hover:text-blue-500 transition-colors">
                                 <Twitter className="h-5 w-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
+                            <a href="https://github.com/Kanzu11" className="text-gray-400 hover:text-blue-500 transition-colors">
                                 <Github className="h-5 w-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
+                            <a href="linkedin.com" className="text-gray-400 hover:text-blue-500 transition-colors">
                                 <Linkedin className="h-5 w-5" />
                             </a>
                         </div>
