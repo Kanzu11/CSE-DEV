@@ -164,7 +164,33 @@ The platform is built on a **Retrieval-Augmented Generation (RAG)** architecture
 -   **Admin**: Can manage the knowledge base (upload/delete documents).
 -   **User**: Can access the chat interface to query the knowledge base and view their personal chat history.
 
+
 ---
+
+## 🚀 Deployment
+
+### Backend (Render)
+1.  Push your code to GitHub.
+2.  Create a new **Web Service** on Render.
+3.  Connect your repository.
+4.  **Settings**:
+    -   **Root Directory**: `server`
+    -   **Build Command**: `npm install`
+    -   **Start Command**: `node index.js`
+5.  **Environment Variables**: Add all variables from your `server/.env` file.
+    -   Set `CLIENT_URL` to your Vercel frontend URL (e.g., `https://knowledge-ai.vercel.app`).
+    -   Set `SERVER_URL` to your Render backend URL (e.g., `https://knowledge-ai-backend.onrender.com`).
+
+### Frontend (Vercel)
+1.  Push your code to GitHub.
+2.  Import your project into Vercel.
+3.  **Settings**:
+    -   **Root Directory**: `client`
+    -   **Framework Preset**: Vite
+    -   **Build Command**: `npm run build`
+    -   **Output Directory**: `dist`
+4.  **Environment Variables**:
+    -   `VITE_API_URL`: Set this to your Render backend URL + `/api` (e.g., `https://knowledge-ai-backend.onrender.com/api`).
 
 ## 📄 License
 

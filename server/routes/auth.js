@@ -16,10 +16,10 @@ router.get('/google', passport.authenticate('google', { scope: ['profile', 'emai
 // @route   GET /api/auth/google/callback
 router.get(
     '/google/callback',
-    passport.authenticate('google', { failureRedirect: 'http://localhost:5173/signup', session: false }),
+    passport.authenticate('google', { failureRedirect: `${process.env.CLIENT_URL || 'http://localhost:5173'}/signup`, session: false }),
     (req, res) => {
         const token = require('../controllers/authController').generateToken(req.user._id);
-        res.redirect(`http://localhost:5173/oauth-success?token=${token}`);
+        res.redirect(`${process.env.CLIENT_URL || 'http://localhost:5173'}/oauth-success?token=${token}`);
     }
 );
 

@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { User, Mail, Lock, ArrowRight, Loader2 } from 'lucide-react';
+import { API_URL } from '../config';
 
 const SignupPage = () => {
     const [username, setUsername] = useState('');
@@ -175,7 +176,7 @@ const SignupPage = () => {
                         <div className="flex justify-center">
                             <button
                                 type="button"
-                                onClick={() => window.location.href = 'http://localhost:5000/api/auth/google'}
+                                onClick={() => window.location.href = `${API_URL}/auth/google`}
                                 className="inline-flex items-center justify-center py-2 px-4 border border-gray-300 rounded-lg bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 w-full sm:w-auto transition-colors"
                             >
                                 <svg className="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
