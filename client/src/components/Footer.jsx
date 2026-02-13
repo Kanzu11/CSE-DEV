@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-1">
-                        <Link to="/" className="flex items-center space-x-2 mb-4">
+                        <Link to="https://github.com/Kanzu11" className="flex items-center space-x-2 mb-4">
                             <Bot className="h-8 w-8 text-blue-600" />
                             <span className="text-xl font-bold text-gray-900">Knowledge AI</span>
                         </Link>
